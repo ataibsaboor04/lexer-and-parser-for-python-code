@@ -130,6 +130,7 @@ To test the lexer and parser on input from a Python file, follow these steps:
 1. Create a Python file (e.g., [`input.py`](Code/input.py)) and write your desired Python code in it.
 2. Open a terminal or command prompt.
 3. Type the following command to input the contents of the Python file to the lexer and parser:
+
    ```
    type .\input.py | .\python.exe
    ```
