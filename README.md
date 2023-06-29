@@ -109,7 +109,7 @@ To create the executable for the Python lexer and parser, follow these steps:
    ```
 Or simply run the following command to create the executable:
 ```
-cd "path\to\project\" ; if ($?) { bison -d python.y -o python.c } ; if ($?) { flex python.l } ; if ($?) { gcc python.c -o python.exe } ; if ($?) { del python.c } ; if ($?) { del python.h } ; if ($?) { del lex.yy.c }
+cd "path\to\project\" && bison -d python.y -o python.c && flex python.l && gcc python.c -o python.exe && del python.c && del python.h && del lex.yy.c
 ```
   
 ### 4.2 Run Executable
@@ -120,7 +120,7 @@ To run the Python executable, use the following command in the terminal or comma
 ```
 Or simply run the following command to create and run the executable:
 ```
-cd "path\to\project\" ; if ($?) { bison -d python.y -o python.c } ; if ($?) { flex python.l } ; if ($?) { gcc python.c -o python.exe } ; if ($?) { del python.c } ; if ($?) { del python.h } ; if ($?) { del lex.yy.c } ; if ($?) { .\python.exe }
+cd "path\to\project\" && bison -d python.y -o python.c && flex python.l && gcc python.c -o python.exe && del python.c && del python.h && del lex.yy.c && .\python.exe
 ```
   
 ### 4.3 Test on Input from a Python File
